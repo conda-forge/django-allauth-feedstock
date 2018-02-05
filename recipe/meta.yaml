@@ -22,8 +22,9 @@ requirements:
   run:
     - python
     - django >=1.11
-    - openid_package
-    - requests-oauthlib >= 0.3.0
+    - python3-openid >=3.0.8
+    - python-openid >=2.2.5
+    - requests-oauthlib >=0.3.0
     - requests
     
 test:
