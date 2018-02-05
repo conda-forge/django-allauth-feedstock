@@ -2,6 +2,7 @@
 {% set version = "0.35.0" %}
 {% set sha256 = "7b31526cccd1c46f9f09acf0703068e8a9669337d29eb065f7e8143c2d897339" %}
 
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -22,14 +23,14 @@ requirements:
   run:
     - python
     - django >=1.11
-    - python3-openid >=3.0.8
-    - python-openid >=2.2.5
+    - python-openid >=2.2.5 # [py27]
+    - python3-openid >= 3.0.8 # [not py27]
     - requests-oauthlib >=0.3.0
     - requests
     
 test:
   requires:
-    - mock >= 1.0.1
+    - mock >=1.0.1 # [py27]
     
 about:
   home: https://github.com/pennersr/django-allauth
@@ -45,3 +46,4 @@ extra:
   recipe-maintainers:
     - cshaley
     - sannykr
+
