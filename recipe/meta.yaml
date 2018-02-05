@@ -23,14 +23,14 @@ requirements:
   run:
     - python
     - django >=1.11
-    - python-openid >=2.2.5 #  [py27]
-    - python3-openid >= 3.0.8 #  [not py27]
+    - python-openid >=2.2.5  # [py27]
+    - python3-openid >= 3.0.8  # [not py27]
     - requests-oauthlib >=0.3.0
     - requests
     
 test:
   requires:
-    - mock >=1.0.1 #  [py27]
+    - mock >=1.0.1  # [py27]
     
 about:
   home: https://github.com/pennersr/django-allauth
