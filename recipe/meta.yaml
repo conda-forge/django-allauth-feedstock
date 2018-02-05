@@ -21,8 +21,15 @@ requirements:
     - setuptools
   run:
     - python
-    - django >=1.8
-
+    - django >=1.11
+    - openid_package
+    - requests-oauthlib >= 0.3.0
+    - requests
+    
+test:
+  requires:
+    - mock >= 1.0.1
+    
 about:
   home: https://github.com/pennersr/django-allauth
   license: MIT
