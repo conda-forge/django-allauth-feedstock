@@ -14,9 +14,7 @@ Integrated set of Django applications addressing authentication, registration, a
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/django-allauth-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-allauth-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/django-allauth-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/django-allauth-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/django-allauth-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/django-allauth-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/django-allauth-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-allauth-feedstock)
 
 Current release info
 ====================
