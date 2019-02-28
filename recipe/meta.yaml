@@ -1,6 +1,6 @@
 {% set name = "django-allauth" %}
-{% set version = "0.39.0" %}
-{% set sha256 = "cae8ab7b1e65f690f6b149663300c04bbd90dbcd2a58cb7a373baf6a69c9c8de" %}
+{% set version = "0.39.1" %}
+{% set sha256 = "4444434c2f43188e16e0a7732c3638e12787ca7e5032f69b6d30b2912f53809e" %}
 
 
 package:
