@@ -5,9 +5,13 @@ Home: https://github.com/pennersr/django-allauth
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-allauth-feedstock/blob/master/LICENSE.txt)
 
 Summary: Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication
+
+Development: https://github.com/pennersr/django-allauth
+
+Documentation: https://django-allauth.readthedocs.io/en/latest/
 
 Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication
 
