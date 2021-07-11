@@ -1,6 +1,6 @@
 {% set name = "django-allauth" %}
-{% set version = "0.41.0" %}
-{% set sha256 = "7ab91485b80d231da191d5c7999ba93170ef1bf14ab6487d886598a1ad03e1d8" %}
+{% set version = "0.45.0" %}
+{% set sha256 = "6d46be0e1480316ccd45476db3aefb39db70e038d2a543112d314b76bb999a4e" %}
 
 
 package:
@@ -18,7 +18,7 @@ build:
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
@@ -27,14 +27,14 @@ requirements:
     - python3-openid >=3.0.8
     - requests-oauthlib >=0.3.0
     - requests
-    
+
 about:
   home: https://github.com/pennersr/django-allauth
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication'
-  description: Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication  
+  summary: Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication
+  description: Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication
   doc_url: https://django-allauth.readthedocs.io/en/latest/
   dev_url: https://github.com/pennersr/django-allauth
 
