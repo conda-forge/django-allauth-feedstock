@@ -20,7 +20,7 @@ requirements:
     - python >=3.5
     - pip
   run:
-    - python
+    - python >=3.5
     - django >=2.0
     - python3-openid >=3.0.8
     - requests-oauthlib >=0.3.0
