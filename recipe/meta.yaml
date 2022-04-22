@@ -1,6 +1,6 @@
 {% set name = "django-allauth" %}
-{% set version = "0.41.0" %}
-{% set sha256 = "7ab91485b80d231da191d5c7999ba93170ef1bf14ab6487d886598a1ad03e1d8" %}
+{% set version = "0.50.0" %}
+{% set sha256 = "ee3a174e249771caeb1d037e64b2704dd3c56cfec44f2058fae2214b224d35e8" %}
 
 
 package:
@@ -12,22 +12,23 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
-build:
-  number: 0
-  noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
-
 requirements:
   build:
     - python
     - setuptools
   run:
     - python
-    - django >=1.11
+    - django >=2.0
     - python3-openid >=3.0.8
     - requests-oauthlib >=0.3.0
     - requests
     
+test:
+  imports:
+    - allauth
+  commands:
+    - pip check
+
 about:
   home: https://github.com/pennersr/django-allauth
   license: MIT
