@@ -1,5 +1,5 @@
 {% set name = "django-allauth" %}
-{% set version = "0.50.0" %}
+{% set version = "0.51.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ee3a174e249771caeb1d037e64b2704dd3c56cfec44f2058fae2214b224d35e8
+  sha256: ca1622733b6faa591580ccd3984042f12d8c79ade93438212de249b7ffb6f91f
 
 build:
   noarch: python
@@ -39,8 +39,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication'
-  description: Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication  
+  summary: Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication
+  description: Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication
   doc_url: https://django-allauth.readthedocs.io/en/latest/
   dev_url: https://github.com/pennersr/django-allauth
 
