@@ -1,5 +1,5 @@
 {% set name = "django-allauth" %}
-{% set version = "0.53.1" %}
+{% set version = "0.54.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1336f430d5797e7484dfddc6ddb1d5f61f04bb24a9519b64756847d089b2ffba
+  sha256: 120e265f802b65738899c6cb627b827fde46a4d03067034c633f516c2adf3e3e
 
 build:
   noarch: python
