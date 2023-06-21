@@ -152,7 +152,4 @@ Feedstock Maintainers
 * [@cshaley](https://github.com/cshaley/)
 * [@jacksund](https://github.com/jacksund/)
 * [@sannykr](https://github.com/sannykr/)
-
-
-<!-- dummy commit to enable rerendering -->
-
+* [@rxm7706](https://github.com/rxm7706/)
