@@ -1,38 +1,36 @@
 {% set name = "django-allauth" %}
-{% set version = "65.0.2" %}
+{% set version = "65.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6b5b3a7a65b1c28078b6eb0dd234310b58a44e8addfd187dc30437b0b2bc41a5
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_allauth-{{ version }}.tar.gz
+  sha256: ab2c32c51797bab1e7a334f37afa61ef4a88c6f13dfd7bd898a16e2b7e567ef0
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.8
+    - setuptools >=40.8.0
     - pip
   run:
-    - python >=3.5
-    - django >=2.0
-    - python3-openid >=3.0.8
-    - requests-oauthlib >=0.3.0
-    - requests
+    - python >=3.8
+    - django >=4.2
+    - asgiref >=3.8.1
 
 test:
   imports:
     - allauth
-  requires:
-    - pip
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/pennersr/django-allauth
