@@ -1,5 +1,5 @@
 {% set name = "django-allauth" %}
-{% set version = "65.19.5" %}
+{% set version = "65.19.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/django_allauth-{{ version }}.tar.gz
-  sha256: 03fdb1431e8cecd55071e6c3a3006f2fe1a45b916ee2bf5d14ed0fdadea3b7e5
+  sha256: 52f6d31998c0101775b2b5d4fb627a18f3e13c79d863740f762ca476e720be9f
 
 build:
   noarch: python
